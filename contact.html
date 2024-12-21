@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Section</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="homePageStyle.css">
+    <link rel="stylesheet" href="contact.css">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+   
+    <!-- Navbar -->
+    <div class="navbar">
+    
+        <div class="portfoliologo"> 
+            <button class="button" data-text="Awesome">
+                <span class="actual-text">&nbsp;portfolio&nbsp;</span>
+                <span aria-hidden="true" class="hover-text">&nbsp;portfolio&nbsp;</span>
+            </button>
+    </div>
+    
+    
+
+        <!-- Navigation Links -->
+        <ul class="nav">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="About.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="Experience.html" class="nav-link">Experience</a></li>
+            <li class="nav-item"><a href="project.html" class="nav-link">Project</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <form action="" method="get">
+                <input type="text" name="search" placeholder="Search..." list="pages">
+                <datalist id="pages">
+                    <option value="Home" data-url="index.html">
+                    <option value="About" data-url="About.html">
+                    <option value="Experience" data-url="Experience.html">
+                    <option value="Project" data-url="project.html">
+                    <option value="Contact" data-url="contact.html">
+                </datalist>
+                <button type="submit">&#x1F50D;</button>
+            </form>
+        </div>
+        
+    </div>
+    <section class="contact-section">
+        <h2>Contact Me</h2>
+
+        <div class="contact-container">
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h3>Get in Touch</h3>
+                <form action="submit-form.php" method="POST">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p><strong>Email:</strong> Harethj18@gmail.com</p>
+                <p><strong>Phone:</strong> +962 798837302</p>
+                <p><strong>Address:</strong> Zarqa, Jordan</p>
+                <div class="map-icon">
+                    <a href="https://maps.app.goo.gl/cXc2zYmJ9wm6gF1k8" target="_blank"
+                        title="View Location on Google Maps">
+                        <img src="https://img.icons8.com/color/48/000000/google-maps.png" alt="Google Maps Icon">
+                      
+                    </a>
+                </div>
+                <div class="hours">
+                    <h3>Business Hours</h3>
+                    <p><strong>Sunday -Thursday:</strong> 9:00 AM - 6:00 PM</p>
+                    <p><strong>Saturday:</strong> 10:00 AM - 4:00 PM</p>
+                    <p><strong>Friday:</strong> Closed</p>
+                </div>
+                <div class="social-icons">
+                    <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>'
+
+    <!-- footer -->
+    <footer>
+        <!-- Footer Title -->
+        <h3>Stay Connected with Us</h3>
+
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+
+        <!-- Important Links -->
+        <div class="links">
+            <a href="#">About Us</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="rights">
+            <p>&copy; 2024 All rights reserved</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

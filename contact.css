@@ -1,0 +1,146 @@
+body {
+    background-color: #A6B1E1;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Contact page  */
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ff7f50;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.contact-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-form,
+.contact-info {
+    flex: 1;
+    min-width: 350px;
+    background: #DCD6F7;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-form:hover,
+.contact-info:hover {
+    transform: translateY(-10px);
+}
+
+.contact-form h3,
+.contact-info h3 {
+    margin-bottom: 20px;
+    color: #ff7f50;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    box-shadow: 0 0 10px #ff7f50;
+}
+
+.submit-btn {
+    background: #ff7f50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.submit-btn:hover {
+    background: #ff4500;
+    transform: scale(1.1);
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.map-icon img {
+    width: 70px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    background: #ff7f50;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    box-shadow: 0 5px 15px rgba(255, 127, 80, 0.7);
+}
+
+.hours {
+    margin-top: 30px;
+    padding: 20px;
+    background: #F4EEFF;
+    border-radius: 10px;
+}
+
+.hours h3 {
+    color: #ff7f50;
+    margin-bottom: 10px;
+}
+
+.hours p {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}

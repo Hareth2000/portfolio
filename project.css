@@ -1,0 +1,84 @@
+body{
+    background-color:  #A6B1E1;
+    margin: 0;
+    padding: 0;
+  }
+/* Main container for projects */
+.projects-section {
+    background-color: #DCD6F7;
+    padding: 40px;
+    margin-bottom: 40px;
+   
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.projects-section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Container for all projects */
+.projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+
+/* Individual project item */
+.project-item {
+    background-color:  #F4EEFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+}
+
+.project-item img {
+    width: 50%;
+    height: auto;
+  
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.project-item h3 {
+    font-size: 1.6rem;
+    color: #ff7043;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* From Uiverse.io by TCdesign-dev */ 
+#bottone1 {
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    border-radius: 9px;
+    background: #ff7043;
+    border: none;
+    font-family: inherit;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s;
+   }
+   
+   #bottone1:hover {
+    box-shadow: 7px 5px 56px -14px #f96436;
+   }
+   
+   #bottone1:active {
+    transform: scale(0.97);
+    box-shadow: 7px 5px 56px -10px #f96336;
+   }

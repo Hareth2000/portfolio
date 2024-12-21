@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Icon Library (Themify Icons) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/themify-icons@0.1.2/css/themify-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="homePageStyle.css">
+    <link rel="stylesheet" href="project.css">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+   
+    <!-- Navbar -->
+    <div class="navbar">
+    
+        <div class="portfoliologo"> 
+            <button class="button" data-text="Awesome">
+                <span class="actual-text">&nbsp;portfolio&nbsp;</span>
+                <span aria-hidden="true" class="hover-text">&nbsp;portfolio&nbsp;</span>
+            </button>
+    </div>
+    
+    
+
+        <!-- Navigation Links -->
+        <ul class="nav">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="About.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="Experience.html" class="nav-link">Experience</a></li>
+            <li class="nav-item"><a href="project.html" class="nav-link">Project</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <form action="" method="get">
+                <input type="text" name="search" placeholder="Search..." list="pages">
+                <datalist id="pages">
+                    <option value="Home" data-url="index.html">
+                    <option value="About" data-url="About.html">
+                    <option value="Experience" data-url="Experience.html">
+                    <option value="Project" data-url="project.html">
+                    <option value="Contact" data-url="contact.html">
+                </datalist>
+                <button type="submit">&#x1F50D;</button>
+            </form>
+        </div>
+        
+    </div>
+    <br>
+
+    <section class="projects-section">
+        <h2>My Projects</h2>
+
+        <div class="projects-container">
+            <!-- Project 1: Car Service -->
+            <div class="project-item">
+                <h3>Car Service - Roadside Assistance</h3>
+                <img src="images\car 2.png" alt="Car Service Project">
+                <p class="project-description">
+                    This project provides a roadside assistance service for vehicles that break down on the road. It
+                    allows users to request immediate help for fixing their cars at the location of breakdown.
+                </p>
+
+
+                <button id="bottone1"
+                    onclick="window.open('https://github.com/AhmadJaber2000/Car_service', '_blank');"><strong>Discover</strong></button>
+
+
+            </div>
+
+            <!-- Project 2: Coffee Shop -->
+         
+                <div class="project-item">
+                    <h3>Coffee Shop - Sales System</h3>
+                    <img src="images\shop.jpg" alt="Coffee Shop Project">
+                    <p class="project-description">
+                        This project is a simple point-of-sale system designed for a coffee shop. It helps manage sales,
+                        inventory, and customer orders, ensuring smooth operations.
+                    </p>
+
+                    <button id="bottone1"
+                        onclick="window.open('https://www.figma.com/proto/caakzHbDzilgx0SyWUDqE3/Wire-frame?page-id=47%3A232&node-id=73-1639&starting-point-node-id=73%3A1639&t=FSmOBgjSnlnBxtRO-1', '_blank');"><strong>Discover</strong></button>
+
+                </div>
+            
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+    <footer>
+        <!-- Footer Title -->
+        <h3>Stay Connected with Us</h3>
+
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+
+        <!-- Important Links -->
+        <div class="links">
+            <a href="#">About Us</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="rights">
+            <p>&copy; 2024 All rights reserved</p>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>

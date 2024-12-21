@@ -1,0 +1,611 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #A6B1E1;
+    color: #fff;
+    overflow-x: hidden;
+    margin: 0%;
+    padding: 0%;
+
+    box-sizing: border-box;
+
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: #424874;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.portfoliologo{
+
+/* From Uiverse.io by satyamchaudharydev */ 
+/* === removing default button style ===*/
+.button {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* button styling */
+  .button {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255,255,255,0.6);
+    --animation-color: #37FF8B;
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+  /* this is the text, when you hover on button */
+  .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+  /* hover */
+  .button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+  }
+  
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navbar-brand img {
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav .nav-item {
+    list-style: none;
+}
+
+.nav .nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.nav .nav-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+/* Search Bar */
+.search-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search-container input {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    outline: none;
+    width: 200px;
+    transition: width 0.3s ease;
+}
+
+.search-container input:focus {
+    width: 300px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+.search-container button {
+    position: absolute;
+    right: 10px;
+    border: none;
+    background: transparent;
+    color: #333;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    color: #ff7f50;
+}
+
+
+/* Full-Width Section */
+.full-width-section {}
+
+.background-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    filter: brightness(40%);
+}
+
+.text-overlay {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+.animated-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    color: #ff7043;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+
+
+.white {
+    color: white;
+}
+
+.dynamic-subtitle {
+    font-size: 2rem;
+    color: #FFFFFF;
+    margin-top: 1rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    animation: slideUp 3s ease-out forwards, fadeInOut 6s infinite;
+    opacity: 0;
+    margin: 0;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInOut {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 1;
+    }
+}
+
+/* Show Full Stack Web Developer first */
+.dynamic-subtitle::before {
+    content: "Full Stack Web Developer";
+    animation: changeSubtitle 6s infinite;
+}
+
+@keyframes changeSubtitle {
+
+    0%,
+    100% {
+        content: "Full Stack Web Developer";
+    }
+
+    50% {
+        content: "Java Developer";
+    }
+}
+
+/* Skills Section */
+.skills-section {
+    text-align: center;
+    background-color: #DCD6F7;
+    color: #333;
+
+
+}
+
+.skills-section h2 {
+    font-size: 2.5rem;
+    margin-top: 0;
+    padding: 20px;
+    color: #ff7043;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Skills Container */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+
+
+
+
+}
+
+/* Individual Skill */
+.skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+/* Skill Box - Remove circular shape, just normal boxes */
+.skill-box {
+    width: 120px;
+    height: 120px;
+    background-color: #e0e0e0;
+    /* Light grey background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    overflow: hidden;
+    /* Prevent overflow from image */
+}
+
+/* Skill icon (image) inside the skill box */
+.skill-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+/* Hover effects */
+.skill-box:hover img {
+    transform: scale(1.1);
+    /* Zoom effect on hover */
+    filter: brightness(1.2);
+    /* Brighten the image */
+}
+
+.skill:hover .skill-box {
+    background-color: #ff7043;
+    /* Soft orange color */
+    transform: scale(1.1);
+    /* Slight zoom effect */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    /* Stronger shadow */
+}
+
+.skill:hover p {
+    color: white;
+    /* Change the text color to white */
+}
+
+/* Skill name text */
+.skill p {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #555;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #F4EEFF;
+    color: #333;
+}
+
+.testimonials-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #ff7043;
+    /* Soft orange for the title */
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: space-around;
+    /* Distribute space evenly between testimonials */
+    gap: 20px;
+    /* Space between the testimonials */
+    align-items: flex-start;
+    /* Align items at the top */
+}
+
+.testimonial {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    /* Adjust the width for multiple items in a row */
+    text-align: center;
+    transition: transform 0.3s ease;
+    flex-grow: 1;
+}
+
+.testimonial:hover {
+    transform: scale(1.05);
+}
+
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.testimonial-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+    border: 3px solid #ff7043;
+    /* Soft orange border */
+}
+
+.testimonial-author {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.testimonial-text {
+    font-size: 1rem;
+    color: #555;
+    font-style: italic;
+    line-height: 1.5;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #424874;
+    /* Dark background */
+    color: #fff;
+    /* White text */
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Footer Title */
+footer h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Social Media Icons Styling */
+footer .social-icons {
+    margin: 20px 0;
+}
+
+footer .social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: #ff7043;
+    /* Light orange color on hover */
+}
+
+/* Links Styling */
+footer .links {
+    margin: 20px 0;
+    text-align: center;
+}
+
+footer .links a {
+    color: white;
+    margin: 0 15px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .links a:hover {
+    color: #ff7043;
+    /* Light orange color on hover */
+}
+
+/* Copyright Styling */
+footer .rights {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    color: #bdc3c7;
+}
+
+/* Footer Fade-in Animation */
+footer {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+/* Media Query for Mobile Screens */
+@media (max-width: 768px) {
+
+    /* Navbar adjustments */
+    .navbar {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .navbar .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .search-container {
+        width: 100%;
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .search-container input {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .search-container button {
+        right: 15px;
+    }
+
+    .full-width-section {
+        height: 50vh;
+        /* تقليل الارتفاع ليصبح مناسبًا للموبايل */
+    }
+
+    .text-overlay .animated-title {
+        font-size: 2rem;
+        /* تقليل حجم الخط */
+    }
+
+    /* Skills Section */
+    .skills-container {
+        grid-template-columns: 1fr 1fr;
+        /* عرض عمودين بدلاً من 5 */
+    }
+
+    .skill-box {
+        width: 100px;
+        /* تقليل حجم مربعات المهارات */
+        height: 100px;
+    }
+
+    /* Testimonials Section */
+    .testimonials-container {
+        grid-template-columns: 1fr;
+        /* عرض شهادة واحدة في كل صف */
+    }
+
+    /* Footer */
+    footer {
+        padding: 20px;
+    }
+
+    /* About Page */
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 150px;
+        /* تقليل حجم الصورة الشخصية */
+        height: 150px;
+    }
+
+    .about-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    /* Experience Page */
+    .experience-content {
+        grid-template-columns: 1fr;
+        /* عرض خبرة واحدة في كل صف */
+    }
+
+    /* Certifications Page */
+    .certifications-content {
+        flex-direction: column;
+        /* عرض الشهادات عموديًا */
+    }
+
+    /* Projects Page */
+    .projects-container {
+        grid-template-columns: 1fr;
+        /* عرض مشروع واحد في كل صف */
+    }
+
+    .project-item img {
+        width: 100%;
+        /* جعل الصور تتمدد لتناسب العرض الكامل */
+    }
+}

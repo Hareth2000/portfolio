@@ -1,0 +1,91 @@
+/* About page */
+.about-section {
+    padding: 40px 20px;
+    background-color:#F4EEFF;
+    color: #333;
+    text-align: center;
+}
+
+.about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+ 
+}
+
+/* تنسيق الصورة الشخصية */
+.about-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    /* لتصبح دائرية */
+    object-fit: cover;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    border: 5px solid #fff;
+    /* إضافة إطار أبيض حول الصورة */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* تأثير عند التمرير */
+}
+
+/* تأثير عند التمرير على الصورة */
+.about-image img:hover {
+    transform: scale(1.1);
+    /* تكبير الصورة عند المرور عليها */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    /* تأثير الظل */
+}
+
+/* إضافة تأثير عند التركيز (focus) على الصورة */
+.about-image img:focus {
+    outline: none;
+    /* إزالة الحدود الافتراضية */
+    border-color: #ff7043;
+    /* تغيير لون الإطار */
+}
+
+/* النص */
+.about-text {
+    text-align: left;
+    max-width: 600px;
+}
+
+.about-text h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #2C3E50;
+}
+
+.about-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* زر تحميل السيرة الذاتية */
+.btn-cv {
+    display: inline-block;
+    background-color: #ff7043;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cv:hover {
+    background-color: #2C3E50;
+    color: #ff7043;
+}
