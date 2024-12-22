@@ -17,17 +17,15 @@
 
 <body>
    
-    <!-- Navbar -->
-    <div class="navbar">
-    
-        <div class="portfoliologo"> 
+       <!-- Navbar -->
+       <div class="navbar">
+        <div class="portfoliologo">
             <button class="button" data-text="Awesome">
                 <span class="actual-text">&nbsp;portfolio&nbsp;</span>
                 <span aria-hidden="true" class="hover-text">&nbsp;portfolio&nbsp;</span>
             </button>
-    </div>
-    
-    
+        </div>
+
 
         <!-- Navigation Links -->
         <ul class="nav">
@@ -52,7 +50,10 @@
                 <button type="submit">&#x1F50D;</button>
             </form>
         </div>
-        
+
+
+        <!-- Hamburger Menu Button -->
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
     </div>
 
     <section class="about-section">
@@ -60,7 +61,7 @@
             <div class="about-content">
                 <!-- Profile Picture -->
                 <div class="about-image">
-                    <img src="images/WhatsApp Image 2024-12-20 at 9.36.22 PM.jpeg" alt="">
+                    <img src="images\hareth.jpg" alt="">
                 </div>
                 <!-- Text -->
                 <div class="about-text">
@@ -78,41 +79,38 @@
                         <strong>Degree:</strong> Computer Science from Hashemite University<br>
                     </p>
                     <!-- Download CV Button -->
-                    <a href="file:///C:/Users/Orange/Downloads/CV_AlHarethSoftwareDeveloper.pdf" download class="btn-cv">Download My CV</a>
+                    <a href="file:///C:/Users/Orange/Downloads/CV_AlHarethSoftwareDeveloper%20(1).pdf" download class="btn-cv">Download My CV</a>
                 </div>
             </div>
         </div>
     </section>
 
 
-    <!-- footer -->
     <footer>
-        <!-- Footer Title -->
-        <h3>Stay Connected with Us</h3>
-
-        <!-- Social Media Icons -->
-        <div class="social-icons">
-            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-        </div>
-
-        <!-- Important Links -->
-        <div class="links">
-            <a href="#">About Us</a>
-            <a href="#">Terms & Conditions</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Contact Us</a>
-        </div>
-
-        <!-- Copyright Section -->
-        <div class="rights">
-            <p>&copy; 2024 All rights reserved</p>
+        <div class="footer-content">
+            <p>&copy; 2024 Hareth. All rights reserved.</p>
+            <div class="links">
+                <a href="#">About</a> |
+                <a href="#">Privacy Policy</a> |
+                <a href="#">Terms & Conditions</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
         </div>
     </footer>
 
 
+
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.nav');
+            nav.classList.toggle('active');
+        }
+    </script>
 
 </body>
 

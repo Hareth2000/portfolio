@@ -1,10 +1,34 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--backgroud-for-body);
+    color: #fff;
+    overflow-x: hidden;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
 
-body{
-  background-color:  #A6B1E1;
+
 }
+:root {
+    --nav-footer-bg-color: #4C585B;
+    --backgroud-for-body: #A5BFCC;
+    --primary-color: #37FF8B;
+    --text-color: #333333;
+    --bg-color: #A5BFCC;
+    --border-color: #7A9A9D;
+    --border-right: 6px;
+    --text-stroke-color: rgba(255, 255, 255, 0.6);
+    --animation-color: #37FF8B;
+    --fs-size: 2em;
+    --primary-color: #37FF8B;
+    --text-color: rgb(67, 66, 66);
+    --bg-color: #A5BFCC;
+
+}
+
 .experience-section {
     padding: 40px 20px;
-    background-color: #f4f4f9;
+    background-color: var(--backgroud-for-body);
     color: #333;
 }
 
@@ -14,14 +38,10 @@ body{
     padding: 20px;
 }
 
-
-
-/* Experience Section */
 /* Experience Section */
 .experience-section {
-    background-color: #DCD6F7;
+    background-color: var(--backgroud-for-body);
     padding: 40px;
-    
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -48,7 +68,7 @@ body{
 
 .experience-item h3 {
     font-size: 1.4rem;
-    color: #ff7043;
+    color: #333;
     margin-bottom: 10px;
 }
 
@@ -68,15 +88,15 @@ body{
     color: #555;
     line-height: 1.6;
 }
-
 /* Certifications Section */
 .certifications-section {
-    background-color:#F4EEFF;
+    background-color: var(--backgroud-for-body);
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Title of Certifications Section */
 .certifications-section h2 {
     font-size: 2rem;
     text-align: center;
@@ -84,32 +104,86 @@ body{
     margin-bottom: 30px;
 }
 
+/* Container for Certification Items */
 .certifications-content {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     gap: 20px;
+    flex-wrap: wrap;  /* This allows items to wrap on smaller screens */
 }
 
+/* Individual Certification Item */
 .certification-item {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 30%; /* This makes each item take up 30% of the container width */
 }
 
+/* Title of Certification Item */
 .certification-item h3 {
     font-size: 1.4rem;
-    color: #ff7043;
+    color: #333;
     margin-bottom: 10px;
 }
 
+/* Provider Name */
 .certification-provider {
     font-weight: bold;
     color: #333;
 }
 
+/* Description of Certification */
 .certification-description {
     font-size: 1rem;
-    color: #555;
+    color: #736c6c;
     line-height: 1.6;
+}
+
+/* Adjust layout for smaller screens */
+@media (max-width: 768px) {
+    .certification-item {
+        flex: 1 1 48%;  /* Take 48% of the container width on smaller screens */
+    }
+       /* Navbar adjustments */
+       .menu-toggle {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        background: #424874;
+        position: absolute;
+        top: 60px;
+        right: 15px;
+        border-radius: 5px;
+        padding: 10px;
+        gap: 10px;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .search-container {
+        display: none;
+    }
+
+    .full-width-section {
+        height: 50vh;
+    }
+
+    .text-overlay .animated-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .certification-item {
+        flex: 1 1 100%;  /* Take 100% of the container width on very small screens */
+    }
 }

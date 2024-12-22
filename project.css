@@ -1,84 +1,177 @@
-body{
-    background-color:  #A6B1E1;
-    margin: 0;
-    padding: 0;
-  }
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--backgroud-for-body);
+
+    overflow-x: hidden;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+
+}
+
 /* Main container for projects */
 .projects-section {
-    background-color: #DCD6F7;
+    background-color: var(--backgroud-for-body);
     padding: 40px;
     margin-bottom: 40px;
-   
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Title of the projects section */
 .projects-section h2 {
     font-size: 2.5rem;
     text-align: center;
-    color: #333;
+    color: var(--text-color);
     margin-bottom: 40px;
 }
 
 /* Container for all projects */
 .projects-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Automatically adjust columns */
+    gap: 20px;
+    padding: 0 20px;
+    margin-top: 20px;
 }
 
-
-/* Individual project item */
+/* Individual project item (Card) */
 .project-item {
-    background-color:  #F4EEFF;
+    background-color: #fff;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 12px; /* Increased border-radius for smoother edges */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
-
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content */
+    justify-content: space-between; /* Spread out the content inside the card */
 }
 
+/* Hover effect on project card */
+.project-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+/* Image inside the project card */
 .project-item img {
-    width: 50%;
+    width: 70%; /* Adjusted size for the image */
     height: auto;
-  
-    border-radius: 15px;
+    border-radius: 8px;
     margin-bottom: 20px;
 }
 
+/* Title of the project */
 .project-item h3 {
-    font-size: 1.6rem;
-    color: #ff7043;
+    font-size: 1.4rem; /* Adjusted title size */
+    color: var(--text-color);
     margin-bottom: 10px;
 }
 
+/* Description of the project */
 .project-description {
     font-size: 1rem;
     color: #555;
     line-height: 1.6;
     margin-bottom: 20px;
+    height: 60px; /* Limit the height for description */
+    overflow: hidden; /* Hide overflowed text */
 }
 
-/* From Uiverse.io by TCdesign-dev */ 
+/* Button Style */
 #bottone1 {
-    padding-left: 33px;
-    padding-right: 33px;
-    padding-bottom: 16px;
-    padding-top: 16px;
-    border-radius: 9px;
-    background: #ff7043;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: #fff;
     border: none;
-    font-family: inherit;
-    text-align: center;
+    border-radius: 8px;
+    font-size: 1rem;
     cursor: pointer;
-    transition: 0.4s;
-   }
-   
-   #bottone1:hover {
-    box-shadow: 7px 5px 56px -14px #f96436;
-   }
-   
-   #bottone1:active {
-    transform: scale(0.97);
-    box-shadow: 7px 5px 56px -10px #f96336;
-   }
+    transition: 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 10px; /* Add space between button and content */
+}
+
+#bottone1:hover {
+    background-color: #32e059; /* Darker green on hover */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+#bottone1:active {
+    transform: scale(0.98);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* New "Upcoming Project" Card */
+.project-item.upcoming {
+    background-color: #f9f9f9; /* Slightly different background for upcoming project */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border: 2px solid #f26464; /* Border color for upcoming project */
+}
+
+.project-item.upcoming h3 {
+    color: #f26464; /* Red color for the upcoming project title */
+    font-size: 1.5rem;
+}
+
+.project-item.upcoming .project-description {
+    color: #7f7f7f;
+    font-style: italic;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr); /* Two items per row for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-container {
+        grid-template-columns: 1fr; /* Single column layout for very small screens */
+    }
+}
+
+/* Adjust layout for smaller screens */
+@media (max-width: 768px) {
+    .certification-item {
+        flex: 1 1 48%;  /* Take 48% of the container width on smaller screens */
+    }
+       /* Navbar adjustments */
+       .menu-toggle {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        background: #424874;
+        position: absolute;
+        top: 60px;
+        right: 15px;
+        border-radius: 5px;
+        padding: 10px;
+        gap: 10px;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .search-container {
+        display: none;
+    }
+
+    .full-width-section {
+        height: 50vh;
+    }
+
+    .text-overlay .animated-title {
+        font-size: 2rem;
+    }
+}

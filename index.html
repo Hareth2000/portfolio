@@ -17,15 +17,13 @@
 
     <!-- Navbar -->
     <div class="navbar">
-    
-        <div class="portfoliologo"> 
+        <div class="portfoliologo">
             <button class="button" data-text="Awesome">
                 <span class="actual-text">&nbsp;portfolio&nbsp;</span>
                 <span aria-hidden="true" class="hover-text">&nbsp;portfolio&nbsp;</span>
             </button>
-    </div>
-    
-    
+        </div>
+
 
         <!-- Navigation Links -->
         <ul class="nav">
@@ -50,27 +48,39 @@
                 <button type="submit">&#x1F50D;</button>
             </form>
         </div>
-        
+
+
+        <!-- Hamburger Menu Button -->
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
     </div>
 
-
-    <!-- Hero Section -->
     <div class="full-width-section">
-        <img src="images\bg_image_1.jpg" alt="Background" class="background-image">
-        <div class="text-overlay">
-            <h1 class="animated-title">
-                I'm<span class="white"> Al-Hareth</span> <span class="white">Jundi</span>
-            </h1>
-            <p class="dynamic-subtitle"></p>
+        <div class="content-container">
+            <!-- User image -->
+            <div class="image-container">
+                <img src="images/WhatsApp Image 2024-12-20 at 9.36.22 PM.jpeg" alt="Al-Hareth Jundi"
+                    class="profile-image">
+            </div>
+            <!-- Text -->
+            <div class="text-container">
+                <h1 class="animated-title">
+                    <span class="animated-text">I'm</span><span> Al-Hareth Jundi</span>
+                </h1>
+                <p class="dynamic-subtitle"></p>
+                <p class="description"> I work on innovative projects to improve user experiences and build advanced web
+                    applications.</p>
+            </div>
         </div>
     </div>
+    <hr class="separator">
+
 
 
     <!-- Skill Section -->
     <div class="skills-section">
         <h2>Skills</h2>
         <div class="skills-container">
-            <!-- Skill 1: HTML -->
+
             <div class="skill">
                 <div class="skill-box">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="">
@@ -78,7 +88,7 @@
                 <p>HTML</p>
             </div>
 
-            <!-- Skill 2: CSS -->
+
             <div class="skill">
                 <div class="skill-box">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt="CSS">
@@ -86,7 +96,7 @@
                 <p>CSS</p>
             </div>
 
-            <!-- Skill 3: JavaScript -->
+
             <div class="skill">
                 <div class="skill-box">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript">
@@ -94,64 +104,62 @@
                 <p>JavaScript</p>
             </div>
 
-            <!-- Skill 4: React -->
             <div class="skill">
                 <div class="skill-box">
-                    <img src="images/download.png" alt="React"> 
+                    <img src="images/download.png" alt="React">
                 </div>
                 <p>React</p>
             </div>
 
-            <!-- Skill 5: Node.js -->
+
             <div class="skill">
                 <div class="skill-box">
-                    <img src="images/images.png" alt="Node.js"> 
+                    <img src="images/images.png" alt="Node.js">
                 </div>
                 <p>Node.js</p>
             </div>
 
-            <!-- Skill 6: Python -->
+
             <div class="skill">
                 <div class="skill-box">
-                    <img src="images/download (1).png" alt=".NET"> 
+                    <img src="images/download (1).png" alt=".NET">
                 </div>
                 <p>.NET</p>
             </div>
 
-            <!-- Skill 7: Java -->
+
             <div class="skill">
                 <div class="skill-box">
-                    <img src="images/java.png" alt="Java"> 
+                    <img src="images/java.png" alt="Java">
                 </div>
                 <p>Java</p>
             </div>
 
-            <!-- Skill 8: SQL -->
+
             <div class="skill">
                 <div class="skill-box">
-                    <img src="images/sql.png" alt="SQL"> 
+                    <img src="images/sql.png" alt="SQL">
                 </div>
                 <p>SQL</p>
             </div>
 
-            <!-- Skill 9: Docker -->
+
             <div class="skill">
                 <div class="skill-box">
-                    <img src="images/Spring.png" alt="Spring Boot"> 
+                    <img src="images/Spring.png" alt="Spring Boot">
                 </div>
                 <p>Spring Boot</p>
             </div>
 
-            <!-- Skill 10: Git -->
             <div class="skill">
                 <div class="skill-box">
-                    <img src="images/git.png" alt="Git"> 
+                    <img src="images/git.png" alt="Git">
                 </div>
                 <p>Git</p>
             </div>
         </div>
     </div>
-
+    <hr class="separator">
 
     <!-- Client Testimonials -->
     <div class="testimonials-section">
@@ -161,7 +169,7 @@
             <div class="testimonial">
                 <div class="testimonial-header">
                     <img src="https://randomuser.me/api/portraits/men/15.jpg" alt="Ahmed Ali"
-                        class="testimonial-avatar"> <!-- Image for Ahmed Ali -->
+                        class="testimonial-avatar">
                     <p class="testimonial-author">Ahmed Ali</p>
                 </div>
                 <p class="testimonial-text">"The collaboration with the team was excellent. The project was completed
@@ -172,7 +180,7 @@
             <div class="testimonial">
                 <div class="testimonial-header">
                     <img src="https://randomuser.me/api/portraits/women/18.jpg" alt="Sara Mohammed"
-                        class="testimonial-avatar"> <!-- Image for Sara Mohammed -->
+                        class="testimonial-avatar">
                     <p class="testimonial-author">Sara Mohammed</p>
                 </div>
                 <p class="testimonial-text">"Professional service and excellent technical support. They exceeded my
@@ -183,7 +191,7 @@
             <div class="testimonial">
                 <div class="testimonial-header">
                     <img src="https://randomuser.me/api/portraits/men/24.jpg" alt="Mohammed Youssef"
-                        class="testimonial-avatar"> <!-- Image for Mohammed Youssef -->
+                        class="testimonial-avatar">
                     <p class="testimonial-author">Mohammed Youssef</p>
                 </div>
                 <p class="testimonial-text">"The design was innovative and professional, and they met all of our
@@ -192,30 +200,19 @@
         </div>
     </div>
 
-    <!-- footer -->
     <footer>
-        <!-- Footer Title -->
-        <h3>Stay Connected with Us</h3>
-
-        <!-- Social Media Icons -->
-        <div class="social-icons">
-            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-        </div>
-
-        <!-- Important Links -->
-        <div class="links">
-            <a href="C:\Users\Orange\Desktop\portfolio-website-\html\About.html" target="_blank">About Us</a>
-            <a href="#">Terms & Conditions</a>
-            <a href="#">Privacy Policy</a>
-            <a href="C:\Users\Orange\Desktop\portfolio-website-\html\contact.html">Contact Us</a>
-        </div>
-
-        <!-- Copyright Section -->
-        <div class="rights">
-            <p>&copy; 2024 All rights reserved</p>
+        <div class="footer-content">
+            <p>&copy; 2024 Hareth. All rights reserved.</p>
+            <div class="links">
+                <a href="#">About</a> |
+                <a href="#">Privacy Policy</a> |
+                <a href="#">Terms & Conditions</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
         </div>
     </footer>
 
@@ -226,8 +223,13 @@
 
 
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.nav');
+            nav.classList.toggle('active');
+        }
+    </script>
+
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>

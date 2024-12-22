@@ -18,18 +18,16 @@
 </head>
 
 <body>
-   
-    <!-- Navbar -->
-    <div class="navbar">
-    
-        <div class="portfoliologo"> 
+
+      <!-- Navbar -->
+      <div class="navbar">
+        <div class="portfoliologo">
             <button class="button" data-text="Awesome">
                 <span class="actual-text">&nbsp;portfolio&nbsp;</span>
                 <span aria-hidden="true" class="hover-text">&nbsp;portfolio&nbsp;</span>
             </button>
-    </div>
-    
-    
+        </div>
+
 
         <!-- Navigation Links -->
         <ul class="nav">
@@ -54,47 +52,67 @@
                 <button type="submit">&#x1F50D;</button>
             </form>
         </div>
-        
+
+
+        <!-- Hamburger Menu Button -->
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
     </div>
     <br>
 
-    <section class="projects-section">
-        <h2>My Projects</h2>
 
+    <!-- Projects Section -->
+    <div class="projects-section">
+        <h2>Projects</h2>
         <div class="projects-container">
-            <!-- Project 1: Car Service -->
+            <!-- Project 1: Car Services -->
             <div class="project-item">
-                <h3>Car Service - Roadside Assistance</h3>
-                <img src="images\car 2.png" alt="Car Service Project">
-                <p class="project-description">
-                    This project provides a roadside assistance service for vehicles that break down on the road. It
-                    allows users to request immediate help for fixing their cars at the location of breakdown.
+                <img src="images\car 2.png" alt="Car Service">
+                <h3>Car Services</h3>
+                <p class="project-description">This service offers on-the-spot car repairs
                 </p>
-
-
-                <button id="bottone1"
-                    onclick="window.open('https://github.com/AhmadJaber2000/Car_service', '_blank');"><strong>Discover</strong></button>
-
-
+                <!-- Link wrapped around button to GitHub repository -->
+                <a href="https://github.com/AhmadJaber2000/Car_service" target="_blank">
+                    <button id="bottone1">Learn More</button>
+                </a>
             </div>
 
+
             <!-- Project 2: Coffee Shop -->
-         
-                <div class="project-item">
-                    <h3>Coffee Shop - Sales System</h3>
-                    <img src="images\shop.jpg" alt="Coffee Shop Project">
-                    <p class="project-description">
-                        This project is a simple point-of-sale system designed for a coffee shop. It helps manage sales,
-                        inventory, and customer orders, ensuring smooth operations.
-                    </p>
+            <div class="project-item">
+                <img src="images/shop.jpg" alt="Coffee Shop">
+                <h3>Coffee Shop</h3>
+                <p class="project-description">A cozy coffee shop offering a relaxing atmosphere.</p>
+                <!-- Wrap the button inside the anchor tag to make it clickable -->
+                <a href="https://www.figma.com/proto/caakzHbDzilgx0SyWUDqE3/Wire-frame?page-id=47%3A232&node-id=73-1639&starting-point-node-id=73%3A1639&t=DhyRIDnREUKWl6Vw-1"
+                    target="_blank">
+                    <button id="bottone1">Learn More</button>
+                </a>
+            </div>
 
-                    <button id="bottone1"
-                        onclick="window.open('https://www.figma.com/proto/caakzHbDzilgx0SyWUDqE3/Wire-frame?page-id=47%3A232&node-id=73-1639&starting-point-node-id=73%3A1639&t=FSmOBgjSnlnBxtRO-1', '_blank');"><strong>Discover</strong></button>
 
-                </div>
-            
+            <!-- Upcoming Project -->
+            <div class="project-item upcoming">
+                <img src="images\download.jpg" alt="Upcoming Project">
+                <h3>Coming Soon</h3>
+                <p class="project-description">Stay tuned for an exciting new project </p>
+                <button id="bottone1">Learn More</button>
+            </div>
+            <!-- Upcoming Project -->
+            <div class="project-item upcoming">
+                <img src="images\download.jpg" alt="Upcoming Project">
+                <h3>Coming Soon</h3>
+                <p class="project-description">Stay tuned for an exciting new project </p>
+                <button id="bottone1">Learn More</button>
+            </div>
+            <!-- Upcoming Project -->
+            <div class="project-item upcoming">
+                <img src="images\download.jpg" alt="Upcoming Project">
+                <h3>Coming Soon</h3>
+                <p class="project-description">Stay tuned for an exciting new project </p>
+                <button id="bottone1">Learn More</button>
+            </div>
         </div>
-    </section>
+    </div>
 
 
 
@@ -102,37 +120,30 @@
 
 
 
-
-
-
-
-    <!-- footer -->
     <footer>
-        <!-- Footer Title -->
-        <h3>Stay Connected with Us</h3>
-
-        <!-- Social Media Icons -->
-        <div class="social-icons">
-            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-        </div>
-
-        <!-- Important Links -->
-        <div class="links">
-            <a href="#">About Us</a>
-            <a href="#">Terms & Conditions</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Contact Us</a>
-        </div>
-
-        <!-- Copyright Section -->
-        <div class="rights">
-            <p>&copy; 2024 All rights reserved</p>
+        <div class="footer-content">
+            <p>&copy; 2024 Hareth. All rights reserved.</p>
+            <div class="links">
+                <a href="#">About</a> |
+                <a href="#">Privacy Policy</a> |
+                <a href="#">Terms & Conditions</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
         </div>
     </footer>
 
+
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.nav');
+            nav.classList.toggle('active');
+        }
+    </script>
 
 
 </body>

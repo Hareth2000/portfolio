@@ -1,9 +1,38 @@
 /* About page */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--backgroud-for-body);
+
+    overflow-x: hidden;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+
+}
+
+:root {
+    --nav-footer-bg-color: #4C585B;
+    --backgroud-for-body: #A5BFCC;
+    --primary-color: #37FF8B;
+    --text-color: #333333;
+    --bg-color: #A5BFCC;
+    --border-color: #7A9A9D;
+    --border-right: 6px;
+    --text-stroke-color: rgba(255, 255, 255, 0.6);
+    --animation-color: #37FF8B;
+    --fs-size: 2em;
+    --primary-color: #37FF8B;
+    --text-color: rgb(67, 66, 66);
+    --bg-color: #A5BFCC;
+
+}
 .about-section {
     padding: 40px 20px;
-    background-color:#F4EEFF;
+    background-color:var(--backgroud-for-body);
     color: #333;
     text-align: center;
+    margin-bottom: 27px;
 }
 
 .about-container {
@@ -27,30 +56,25 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    /* لتصبح دائرية */
     object-fit: cover;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     margin: 0 auto;
     border: 5px solid #fff;
-    /* إضافة إطار أبيض حول الصورة */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    /* تأثير عند التمرير */
+
 }
 
 /* تأثير عند التمرير على الصورة */
 .about-image img:hover {
     transform: scale(1.1);
-    /* تكبير الصورة عند المرور عليها */
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
-    /* تأثير الظل */
+
 }
 
 /* إضافة تأثير عند التركيز (focus) على الصورة */
 .about-image img:focus {
     outline: none;
-    /* إزالة الحدود الافتراضية */
     border-color: #ff7043;
-    /* تغيير لون الإطار */
 }
 
 /* النص */
@@ -88,4 +112,45 @@
 .btn-cv:hover {
     background-color: #2C3E50;
     color: #ff7043;
+}
+
+/* Adjust layout for smaller screens */
+@media (max-width: 768px) {
+    .certification-item {
+        flex: 1 1 48%;  /* Take 48% of the container width on smaller screens */
+    }
+       /* Navbar adjustments */
+       .menu-toggle {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        background: #424874;
+        position: absolute;
+        top: 60px;
+        right: 15px;
+        border-radius: 5px;
+        padding: 10px;
+        gap: 10px;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .search-container {
+        display: none;
+    }
+
+    .full-width-section {
+        height: 50vh;
+    }
+
+    .text-overlay .animated-title {
+        font-size: 2rem;
+    }
 }
