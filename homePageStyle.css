@@ -1,18 +1,6 @@
-body {
-    font-family: 'Poppins', sans-serif;
-    background: var(--backgroud-for-body);
-    color: #fff;
-    overflow-x: hidden;
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-
-
-}
-
 :root {
     --nav-footer-bg-color: #4C585B;
-    --backgroud-for-body: #A5BFCC;
+    --backgroud-for-body: rgba(165, 191, 204, 0.24);
     --primary-color: #37FF8B;
     --text-color: #333333;
     --bg-color: #A5BFCC;
@@ -27,7 +15,17 @@ body {
 
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--backgroud-for-body);
+    color: #fff;
+    overflow-x: hidden;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
 
+
+}
 
 /* Hamburger Menu Button */
 .menu-toggle {
@@ -167,17 +165,17 @@ body {
     cursor: pointer;
 }
 
-/* قسم الهيرو */
-
 /* Hero section */
 .full-width-section {
+    background-color: var(--backgroud-for-body);
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
     box-sizing: border-box;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    /* margin-bottom: 30px;
+    margin-top: 30px; */
+    height:400px ;
 }
 
 .content-container {
@@ -290,10 +288,10 @@ body {
 
 .skills-section {
     text-align: center;
-    background-color: var(--backgroud-for-body);
-    color: #333;
+    background-color: rgba(165, 191, 204, 0.24);
+    /* color: #333; */
     margin-top: 0;
-    margin-bottom: 50px;
+
 }
 
 /* Skills Title */
@@ -308,8 +306,17 @@ body {
 
 /* Skills Container */
 .skills-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    /* Uniform gap between items */
+    padding: 20px;
+    /* Padding around the grid to match internal gaps */
+}
+
+.skills-container2 {
+    display: flex;
+    justify-content: space-between;
     gap: 20px;
     /* Uniform gap between items */
     padding: 20px;
@@ -381,6 +388,7 @@ body {
     text-align: center;
     padding: 40px 20px;
     background-color: var(--backgroud-for-body);
+    margin-top: 0;
 }
 
 .testimonials-section h2 {
@@ -453,11 +461,11 @@ footer {
     padding: 15px 0;
     font-size: 0.9rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
-   
-   
+    
+
+
 }
 
 /* Footer Content */
